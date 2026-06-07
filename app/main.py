@@ -7,6 +7,10 @@ import database
 # Initialize the application
 app = FastAPI(title="Employee Management Core API")
 
+# Vercel URL
+
+origins = ["https://frontend-deploy-nu-three.vercel.app","http://localhost:3000"]
+
 # Fix CORS - Added the missing comma here so the browser allows connections
 app.add_middleware(
     CORSMiddleware,
